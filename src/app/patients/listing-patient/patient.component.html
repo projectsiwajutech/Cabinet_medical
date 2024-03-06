@@ -1,0 +1,167 @@
+<div class="content-wrapper">
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-title">Liste des patients</p>
+          <!-- <div class="input-group"> barre de recherche
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-primary" type="button">Search</button>
+            </div>
+          </div> -->
+          <button (click)="redirectionNewPatient()" type="button" class="btn btn-primary">Nouveau patient</button>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                    <table id="example" class="display expandable-table dataTable no-footer" style="width: 100%;" role="grid">
+                    <thead>
+                    <tr role="row">
+                        <th class="select-checkbox sorting_disabled" rowspan="1" colspan="1" aria-label="Quote#" style="width: 77px;">No</th>
+                        <th class="" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Product: activate to sort column ascending" style="width: 82px;">Nom</th>
+                        <th class="" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Business type: activate to sort column ascending" style="width: 100px;">Prenom</th>
+                        <th class="" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Policy holder: activate to sort column ascending" style="width: 95px;">Telephone</th>
+                        <th class="" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Premium: activate to sort column ascending" style="width: 66px;">Adresse</th>
+                        <th class="" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 66px;">Profession</th>
+                        <th class="" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Updated at: activate to sort column ascending" style="width: 82px;" aria-sort="descending">Situation Matrimoniale</th>
+                        <th class="details-control" rowspan="1" colspan="1" aria-label="" style="width: 26px;" >Action</th>
+                    </tr>
+                    </thead>
+                <tbody>
+                    <tr class="odd shown">
+                        <td class=" select-checkbox">1</td>
+                        <td class="">DOSSOU</td>
+                        <td>Gille</td>
+                        <td>97750466</td>
+                        <td>Abomey Calavi</td>
+                        <td class="">Enseignant</td>
+                        <td class="sorting_1">Célibataire</td>
+                        <td class=" details-control" data-toggle="collapse" href="#detail"></td>
+                    </tr>
+                    <tr >
+                        <td colspan="8" class="collapse" id="detail">
+                            <table cellpadding="5" cellspacing="0" border="0" style="width:100%;">
+                                <tbody>
+                                    <tr class="expanded-row">
+                                        <td colspan="8" class="row-bg">
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="cell-hilighted">
+                                                        <div class="d-flex mb-2">
+                                                            <div class="mr-2 min-width-cell">
+                                                                <p>Date de naissance</p>
+                                                                <h6>25/04/1995</h6>
+                                                            </div>
+                                                            <div class="min-width-cell">
+                                                                <p>Sexe</p>
+                                                                <h6>Masculin</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="mr-2 min-width-cell">
+                                                                <p>Date d'arrivé</p>
+                                                                <h5>02/12/23</h5>
+                                                            </div>
+                                                            <div class="min-width-cell">
+                                                                <p>Heure d'arrivée</p>
+                                                                <h5>14:25</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="mr-2 min-width-cell">
+                                                                <button 
+                                                                type="button" 
+                                                                class="btn btn-success">
+                                                                <i class=""></i>Consulter</button>
+                                                            </div>
+                                                            <div class="min-width-cell">
+                                                                <button type="button" 
+                                                                class="btn btn-info btn-icon-text">  
+                                                                <i class="ti-printer btn-icon-append"></i></button> 
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+                                                    
+                                                    <div class="expanded-table-normal-cell">
+                                                        <div class="mr-2 mb-4">
+                                                            <p>Temperature.</p>
+                                                            <h6>40</h6>
+                                                        </div>
+                                                        <div class="mr-2">
+                                                            <p>Taille.</p>
+                                                            <h6>1.75 m</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="expanded-table-normal-cell">
+                                                        <div class="mr-2 mb-4">
+                                                            <p>Pression artérielle</p>
+                                                            <h6>11</h6>
+                                                        </div>
+                                                        <div class="mr-2">
+                                                            <p>Poids</p>
+                                                            <h6>80 kg.</h6>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    <div class="expanded-table-normal-cell">
+                                                        <div class="mr-2 mb-3 d-flex">
+                                                            <div>
+                                                                <h6>Groupe sanguin</h6>
+                                                            </div>
+                                                            <div class="highlighted-alpha"> A</div>
+                                                        </div>
+                                                        <div class="mr-2 d-flex"> 
+                                                            <img src="../../assets/images/profil/user-1.jpg" alt="profile">
+                                                            <div>
+                                                                <p>Patient :</p>
+                                                                <h6>Dossou Gille</h6>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="expanded-table-normal-cell">
+                                                        <div class="mr-2 mb-4">
+                                                            <p>Antecédent médical</p>
+                                                            <h6>Aucun</h6>
+                                                        </div>
+                                                        <div class="mr-2 mb-4">
+                                                            <p>Antecédent chirugical</p>
+                                                            <h6>Aucun</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="expanded-table-normal-cell">
+                                                        <div class="mr-2 mb-4">
+                                                        <button 
+                                                        type="button" 
+                                                        class="btn btn-primary">M</button>
+                                                        </div> 
+                                                        <div class="mr-2 mb-4">
+                                                            <button 
+                                                        type="button" 
+                                                        class="btn btn-danger">S</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+                </div>
+
+
+                </div>
+        </div>
+      </div>
+   </div>
+</div>
+</div>
+
+
+
+
+
